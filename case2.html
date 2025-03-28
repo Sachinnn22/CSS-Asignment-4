@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #0033cc, #007bff);
+        }
+
+        .circle {
+            position: relative;
+            width: 160px;
+            height: 160px;
+        }
+
+        .loading {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            border: 10px solid white;
+            border-top-color: red;
+            transform: translate(-50%, -50%);
+        }
+
+        .loading:hover {
+            animation: rotate 2s ease-in-out;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .center {
+            width: 180px;
+            height: 180px;
+            background-color: gray;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1000;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="circle">
+    <div class="loading"></div>
+    <div class="center">RWAD</div>
+</div>
+
+</body>
+</html>

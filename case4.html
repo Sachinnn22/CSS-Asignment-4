@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        section {
+
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section>div {
+            border: 2px solid black;
+            width: 10px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+
+            animation-name: my-animation;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+        }
+
+        @keyframes my-animation {
+            from {
+                opacity: 1;
+                width: 10px;
+            }
+
+            to {
+                opacity: 0;
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

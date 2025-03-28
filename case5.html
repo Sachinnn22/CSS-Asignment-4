@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 5</title>
+  <link rel="stylesheet" href="normalize.css">
+
+  <style>
+    .slideshow-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slideshow {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      animation: slide 12s infinite ease-in-out;
+    }
+
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      flex-shrink: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%, 10% {
+        transform: translateX(0%);
+      }
+      15%, 25% {
+        transform: translateX(-100vw);
+      }
+      30%, 40% {
+        transform: translateX(-200vw);
+      }
+      45%, 55% {
+        transform: translateX(-300vw);
+      }
+      60%, 70% {
+        transform: translateX(-200vw);
+      }
+      75%, 85% {
+        transform: translateX(-100vw);
+      }
+      90%, 100% {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+<body>
+<section class="slideshow-container">
+  <div class="slideshow">
+    <div class="slide"><img src="../assets/images/slide1.jpeg"></div>
+    <div class="slide"><img src="../assets/images/slide2.jpeg"></div>
+    <div class="slide"><img src="../assets/images/slide3.jpeg"></div>
+    <div class="slide"><img src="../assets/images/slide4.jpeg"></div>
+  </div>
+</section>
+</body>
+</html>

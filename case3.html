@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 3</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section {
+            width: 800px;
+            height: 600px;
+        }
+
+        div {
+            width: 250px;
+            height: 100px;
+            background-color: red;
+            border-radius: 15px 15px 15px 15px;
+
+            animation: animation 5s infinite;
+        }
+
+        @keyframes animation {
+            0% {
+                margin: 0;
+                background-color: blue;
+            }
+
+            12.5% {
+                margin-left: 550px;
+                margin-top: 0;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+
+            25% {
+                margin-left: 550px;
+                margin-top: 500px;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+
+            37.5% {
+                margin-left: 0;
+                margin-top: 500px;
+                background-color: deeppink;
+                transform: rotate(180deg);
+            }
+
+            50% {
+                margin: 0;
+                background-color: orange;
+                transform: rotate(360deg);
+            }
+
+            62.5% {
+                margin-left: 0;
+                margin-top: 500px;
+                background-color: deeppink;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                margin-left: 550px;
+                margin-top: 500px;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+
+            87.5% {
+                margin-left: 550px;
+                margin-top: 0;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+
+            100% {
+                margin: 0;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

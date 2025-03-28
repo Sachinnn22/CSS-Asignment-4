@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section > div {
+            width: 350px;
+            height: 50px;
+            background-color: red;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -300px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px;
+
+            transition: all 1s;
+        }
+
+        section > div:hover {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>Menu One</h1>
+        <img src="../assets/images/icon-1.png" width="50" height="50">
+    </div>
+    <div>
+        <h1>Menu Two</h1>
+        <img src="../assets/images/icon-2.png" width="50" height="50">
+    </div>
+    <div>
+        <h1>Menu Three</h1>
+        <img src="../assets/images/icon-3.png" width="50" height="50">
+    </div>
+    <div>
+        <h1>Menu Four</h1>
+        <img src="../assets/images/icon-4.png" width="50" height="50">
+    </div>
+    <div>
+        <h1>Menu Five</h1>
+        <img src="../assets/images/icon-5.png" width="50" height="50">
+    </div>
+</section>
+</body>
+</html>
